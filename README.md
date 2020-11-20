@@ -29,6 +29,8 @@ Para o funcionamento do projeto, será necessário:
 
 ### :newspaper: Documentação
 
+#### API URIs
+
 <details hidden>
   <summary>Animal</summary>
   <ul>
@@ -66,6 +68,10 @@ Para o funcionamento do projeto, será necessário:
     <br>
   </ul>
 </details>
+
+#### Autenticação
+
+- <a href="https://laravel.com/docs/5.0/session#session-usage">Laravel Session Facade</a>
 
 ---
 
