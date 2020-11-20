@@ -32,6 +32,7 @@ Para o funcionamento do projeto, será necessário:
 <details hidden>
   <summary>Animal</summary>
   <ul>
+    <br>
     <li>Listar todos os Animais</li>
     <li>Listar todos os Animais - por Ordem Alfabética</li>
     <li>Listar todos os Animais - por Ordem de Raça</li>
@@ -44,6 +45,7 @@ Para o funcionamento do projeto, será necessário:
 <details hidden>
   <summary>Cliente</summary>
   <ul>
+    <br>
     <li>Listar todos os Clientes</li>
     <li>Listar todos os Clientes - por Ordem Alfabética</li>
     <li>Listar todos os Clientes - por Ordem de Idade</li>
@@ -56,6 +58,7 @@ Para o funcionamento do projeto, será necessário:
 <details hidden>
   <summary>Usuário</summary>
   <ul>
+    <br>
     <li>Login</li>
     <li>Registrar novo Usuário</li>
   </ul>
