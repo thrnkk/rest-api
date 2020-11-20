@@ -27,7 +27,7 @@ Para o funcionamento do projeto, será necessário:
 5. Marque a flag `"admin": 1` para ter acesso à todas as APIs.
 6. `http://127.0.0.1/api/login` para logar e ter acesso às APIs.
 
-### :paperclip: Documentação
+### :newspaper: Documentação
 
 <details hidden>
   <summary>Animal</summary>
