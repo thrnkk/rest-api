@@ -18,7 +18,7 @@ Para o funcionamento do projeto, será necessário:
   <img height="100px" widht="100px" src="https://laravel.com/assets/img/components/logo-laravel.svg">
 </p>
 
-### Utilização :mega:
+### :mega: Utilização 
 
 1. Entrar na pasta raiz do projeto.
 2. `php artisan serve` para rodar o seu projeto no seu computador.
@@ -26,6 +26,40 @@ Para o funcionamento do projeto, será necessário:
 4. `http://127.0.0.1/api/register` para registrar algum usuário.
 5. Marque a flag `"admin": 1` para ter acesso à todas as APIs.
 6. `http://127.0.0.1/api/login` para logar e ter acesso às APIs.
+
+### :paperclip: Documentação
+
+<details hidden>
+  <summary>Animal</summary>
+  <ul>
+    <li>Listar todos os Animais</li>
+    <li>Listar todos os Animais - por Ordem Alfabética</li>
+    <li>Listar todos os Animais - por Ordem de Raça</li>
+    <li>Atualizar Animal</li>
+    <li>Deletar Animal</li>
+    <li>Criar Animal</li>
+  </ul>
+</details>
+
+<details hidden>
+  <summary>Cliente</summary>
+  <ul>
+    <li>Listar todos os Clientes</li>
+    <li>Listar todos os Clientes - por Ordem Alfabética</li>
+    <li>Listar todos os Clientes - por Ordem de Idade</li>
+    <li>Atualizar Cliente</li>
+    <li>Deletar Cliente</li>
+    <li>Criar Cliente</li>
+  </ul>
+</details>
+
+<details hidden>
+  <summary>Usuário</summary>
+  <ul>
+    <li>Login</li>
+    <li>Registrar novo Usuário</li>
+  </ul>
+</details>
 
 ---
 
