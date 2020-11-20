@@ -42,26 +42,22 @@ Para o funcionamento do projeto, será necessário:
 
 <details hidden>
   <summary>:family: Cliente</summary>
-  <ul>
-    <br>
-    <li>Listar todos os Clientes</li>
-    <li>Listar todos os Clientes - por Ordem Alfabética</li>
-    <li>Listar todos os Clientes - por Ordem de Idade</li>
-    <li>Atualizar Cliente</li>
-    <li>Deletar Cliente</li>
-    <li>Criar Cliente</li>
-    <br>
-  </ul>
+  
+  > Listar todos os Clientes <br>
+  > Listar todos os Clientes - por Ordem Alfabética <br>
+  > Listar todos os Clientes - por Ordem de Idade <br>
+  > Atualizar Cliente <br> 
+  > Deletar Cliente <br> 
+  > Criar Cliente <br>
+  
 </details>
 
 <details hidden>
   <summary>:lock: Usuário</summary>
-  <ul>
-    <br>
-    <li>Login</li>
-    <li>Registrar novo Usuário</li>
-    <br>
-  </ul>
+  
+  > Login <br> 
+  > Registrar Usuário <br>
+  
 </details>
 
 #### Autenticação
