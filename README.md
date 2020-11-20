@@ -2,7 +2,7 @@
 
 ## :computer: Projeto
 
-O projeto consiste em criar um sistema responsável por administrar o departamento de TI, senhas e gráficos de acompanhamento.
+O projeto consiste em criar uma API com autenticação, utilizando como base a estrutura MVC.
 
 ### :heavy_check_mark: Requisitos 
 
