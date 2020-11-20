@@ -23,9 +23,6 @@ Para o funcionamento do projeto, será necessário:
 1. Entrar na pasta raiz do projeto.
 2. `php artisan serve` para rodar o seu projeto no seu computador.
 3. `php artisan route:list` para visualizar todas as URLs.
-4. `http://127.0.0.1/api/register` para registrar algum usuário.
-5. Marque a flag `"admin": 1` para ter acesso à todas as APIs.
-6. `http://127.0.0.1/api/login` para logar e ter acesso às APIs.
 
 ### :newspaper: Documentação
 
@@ -70,6 +67,8 @@ Para o funcionamento do projeto, será necessário:
 #### Autenticação
 
 - <a href="https://laravel.com/docs/5.0/session#session-usage">Laravel Session Facade</a>
+
+Para acessar algumas URIs, é necessário que o usuário esteja autenticado e esteja cadastrado como administrador.
 
 ---
 
