@@ -39,6 +39,7 @@ Para o funcionamento do projeto, será necessário:
     <li>Atualizar Animal</li>
     <li>Deletar Animal</li>
     <li>Criar Animal</li>
+    <br>
   </ul>
 </details>
 
@@ -52,6 +53,7 @@ Para o funcionamento do projeto, será necessário:
     <li>Atualizar Cliente</li>
     <li>Deletar Cliente</li>
     <li>Criar Cliente</li>
+    <br>
   </ul>
 </details>
 
@@ -61,6 +63,7 @@ Para o funcionamento do projeto, será necessário:
     <br>
     <li>Login</li>
     <li>Registrar novo Usuário</li>
+    <br>
   </ul>
 </details>
 
