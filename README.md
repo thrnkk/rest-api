@@ -29,7 +29,7 @@ Para o funcionamento do projeto, será necessário:
 #### API URIs
 
 <details hidden>
-  <summary>Animal</summary>
+  <summary>:hamster: Animal</summary>
 
   > [Listar todos os Animais](documentation/animal_by_id.md) <br>
   > Listar todos os Animais - por Ordem Alfabética <br>
@@ -41,7 +41,7 @@ Para o funcionamento do projeto, será necessário:
 </details>
 
 <details hidden>
-  <summary>Cliente</summary>
+  <summary>:family: Cliente</summary>
   <ul>
     <br>
     <li>Listar todos os Clientes</li>
@@ -55,7 +55,7 @@ Para o funcionamento do projeto, será necessário:
 </details>
 
 <details hidden>
-  <summary>Usuário</summary>
+  <summary>:lock: Usuário</summary>
   <ul>
     <br>
     <li>Login</li>
