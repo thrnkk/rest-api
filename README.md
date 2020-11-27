@@ -70,6 +70,9 @@ Para acessar algumas URIs, é necessário que o usuário esteja autenticado e es
 
 ---
 
+
 <p align="center">
   <a href="https://github.com/thrnkk" ><img src="https://img.shields.io/badge/github-thrnkk-24292e"></a>
+  <a href="https://github.com/Luis-kuhn" ><img src="https://img.shields.io/badge/github-Luis--kuhn-24292e"></a>
+  <a href="https://github.com/Christyelen" ><img src="https://img.shields.io/badge/github-Christyelen-24292e"></a>
 </p>
