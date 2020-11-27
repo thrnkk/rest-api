@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Animal;
+use App\Models\Customer;
 use App\Models\User;
 use App\Http\Requests;
 use Session;
@@ -10,23 +11,23 @@ use App\Http\Controllers\Controller;
 
 class AnimalController extends Controller
 {
-
-    public function __construct(Animal $animals, User $users){
+    public function __construct(Animal $animals, User $users, Customer $customers){
         $this->animals = $animals;
+        $this->customers = $customers;
         $this->users = $users;
     }
 
     public function index()
     {
 
-        $animals = $this->animals->orderBy("id")->get();
+        $animals = $this->animals->with('customers')->orderBy("id")->get();
         return response()->json($animals, 200);
 
     }
 
     public function show($id)
     {
-        $animal = $this->animals->find($id);
+        $animal = $this->animals->with('customers')->find($id);
 
         if(!$animal) {
             return response()->json(['message' => 'Registro não encontrado.'], 404);
@@ -62,7 +63,7 @@ class AnimalController extends Controller
 
         if (Session::get('user')) {
 
-            $animal = $this->animals->find($id);
+            $animal = $this->animals->with('customers')->find($id);
 
             if(!$animal) {
                 return response()->json([
@@ -87,7 +88,7 @@ class AnimalController extends Controller
 
     public function destroy($id)
     {
-        $animal = $this->animals->find($id);
+        $animal = $this->animals->with('customers')->find($id);
 
         if(!$animal) {
             return response()->json([
@@ -101,7 +102,7 @@ class AnimalController extends Controller
     public function orderByBreed()
     {
 
-    	$animals = $this->animals->orderBy("breed")->get();
+    	$animals = $this->animals->with('customers')->orderBy("breed")->get();
         return response()->json($animals, 200);
 
     }
@@ -109,16 +110,16 @@ class AnimalController extends Controller
     public function orderByAlphabeticOrder()
     {
 
-    	$animals = $this->animals->orderBy("name")->get();
+    	$animals = $this->animals->with('customers')->orderBy("name")->get();
         return response()->json($animals, 200);
 
     }
 
-    public function setCustomers($animalId, $customerId)
+    public function setCustomer($animalId, $customerId)
     {
 
         $customer = $this->customers->find($customerId);
-        $animal = $this->animals->find($animalId);
+        $animal = $this->animals->with('customers')->find($animalId);
 
         if(!$customer) {
             return response()->json([
@@ -132,9 +133,44 @@ class AnimalController extends Controller
             ], 404);
         }
 
-        $animal->animals()->attach($customer);
+        if ($animal->customers()->syncWithoutDetaching([$customer->id])) {
+            return response()->json($customer, 200);
+        }
 
-        return response()->json($animal, 200);
+        return response()->json([
+                'message'   => 'Não foi possível cadastrar cliente.',
+            ], 404);
+
+    }
+
+    public function deleteCustomer($animalId, $customerId)
+    {
+
+        $customer = $this->customers->find($customerId);
+        $animal = $this->animals->with('customers')->find($animalId);
+
+        if(!$customer) {
+            return response()->json([
+                'message'   => 'Cliente não encontrado.',
+            ], 404);
+        }
+
+        if(!$animal) {
+            return response()->json([
+                'message'   => 'Animal não encontrado.',
+            ], 404);
+        }
+
+        if($animal->customers->contains($customer)){
+
+            $animal->customers()->detach($customer->id);
+            return response()->json($animal, 200);
+
+        }
+
+        return response()->json([
+                'message'   => 'Não foi possível deletar cliente.',
+            ], 404);
 
     }
 

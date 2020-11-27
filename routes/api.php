@@ -17,8 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::post('login', 'App\Http\Controllers\AuthController@login');
 Route::post('register', 'App\Http\Controllers\AuthController@register');
 
-Route::put('animal/{idAnimal}/customers/{idCliente}', 'App\Http\Controllers\AnimalController@setCustomers');
-Route::put('customer/{idCliente}/animals/{idAnimal}', 'App\Http\Controllers\CustomerController@setAnimals');
+Route::put('animal/{idAnimal}/customers/{idCliente}', 'App\Http\Controllers\AnimalController@setCustomer');
+Route::put('customer/{idCliente}/animals/{idAnimal}', 'App\Http\Controllers\CustomerController@setAnimal');
+
+Route::delete('animal/{idAnimal}/customers/{idCliente}', 'App\Http\Controllers\AnimalController@deleteCustomer');
+Route::delete('customer/{idCliente}/animals/{idAnimal}', 'App\Http\Controllers\CustomerController@deleteAnimal');
 
 Route::get('animal/name', 'App\Http\Controllers\AnimalController@orderByAlphabeticOrder');
 Route::get('animal/breed', 'App\Http\Controllers\AnimalController@orderByBreed');
