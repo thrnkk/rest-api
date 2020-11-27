@@ -1,4 +1,4 @@
-<p align="center"><img height="100px" widht="200px" src="https://miro.medium.com/max/700/1*mSYCHLZtQE8Si9a_8QZ0yA.png"></p>
+<p align="center"><img height="150px" widht="200px" src="https://miro.medium.com/max/1292/1*y5_uGkNdD6h6pN2aU1RPGw.png"></p>
 
 ## :computer: Projeto
 
@@ -21,8 +21,10 @@ Para o funcionamento do projeto, será necessário:
 ### :mega: Utilização 
 
 1. Entrar na pasta raiz do projeto.
-2. `php artisan serve` para rodar o seu projeto no seu computador.
-3. `php artisan route:list` para visualizar todas as URLs.
+2. Edite o arquivo `.env` para o seu banco de dados.
+3. Rode o comando `composer install`.
+4. Após o passo anterior terminar, execute o comando `php artisan serve` para rodar o seu projeto no seu computador.
+5. Em outro cmd, execute `php artisan route:list` para visualizar todas as URLs.
 
 ### :newspaper: Documentação
 
