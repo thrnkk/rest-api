@@ -23,8 +23,9 @@ Para o funcionamento do projeto, será necessário:
 1. Entrar na pasta raiz do projeto.
 2. Edite o arquivo `.env` para o seu banco de dados.
 3. Rode o comando `composer install`.
-4. Após o passo anterior terminar, execute o comando `php artisan serve` para rodar o seu projeto no seu computador.
-5. Em outro cmd, execute `php artisan route:list` para visualizar todas as URLs.
+4. Após rodas o passo anterior e ter configurado sua `.env`, é necessário rodar o comando `php artisan migrate` para criar as tabelas na database.
+5. Após o passo anterior terminar, execute o comando `php artisan serve` para rodar o seu projeto no seu computador.
+6. Em outro cmd, execute `php artisan route:list` para visualizar todas as URLs.
 
 ### :newspaper: Documentação
 
